@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    tools:context="in.ac.iiitd.psingh.mc16.objectivequiz.HintActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="24dp"
+    android:layout_gravity="center_horizontal">
+
+<TextView
+    android:id="@+id/textHint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:textColor="@color/black"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:background="@color/yellow"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Click to Show Hint"
+    />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="2sp"
+    android:background="@color/black"
+    >
+    <Button
+        android:id="@+id/show_hint"
+        android:background="@color/greenmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Hint"
+        android:paddingRight="2dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic"/>
+</FrameLayout>
+
+</LinearLayout>
+
+</FrameLayout>

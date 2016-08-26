@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    tools:context="in.ac.iiitd.psingh.mc16.objectivequiz.QuizActivity"
+  >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:background="@color/black">
+
+        <Button
+            android:id="@+id/TrueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/greenmore"
+            android:textColor="@color/white"
+            android:paddingRight="6dp"
+            android:drawableLeft="@drawable/ic"
+            android:text="Correct"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:layout_marginLeft="6dp"
+            android:background="@color/black">
+
+        <Button
+            android:id="@+id/FalseButton"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Incorrect"
+            android:paddingRight="8dp"
+            android:drawableLeft="@drawable/off"
+            />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@color/yellow"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check if a number is prime or not\n (Click 'Next' to get Started)"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextText"
+        android:gravity="center"
+        android:drawableRight="@drawable/next"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="bottom|center_horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue">
+
+            <Button
+                android:id="@+id/hint_button"
+                android:background="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="2dp"
+                android:textColor="@color/white"
+                android:text="@string/hint"
+                android:drawableEnd="@drawable/hint" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue">
+
+            <Button
+                android:id="@+id/cheat_button"
+                android:background="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:textColor="@color/white"
+                android:text="@string/cheat"
+                android:drawableRight="@drawable/cheat" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
